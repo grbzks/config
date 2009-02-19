@@ -1,0 +1,184 @@
+
+style "theme-default"
+{
+  GtkButton      ::default_border    = { 0, 0, 0, 0 }
+  GtkRange       ::trough_border     = 0
+  GtkPaned       ::handle_size       = 6
+  GtkRange       ::slider_width      = 15
+  GtkRange       ::stepper_size      = 15
+
+  GtkScrollbar   ::min_slider_length = 30
+  GtkCheckButton ::indicator_size    = 14
+  GtkMenuBar     ::internal-padding  = 0
+  GtkTreeView    ::expander_size     = 14
+  GtkExpander    ::expander_size     = 16
+  GtkScale       ::slider-length     = 24
+  GtkWidget      ::cursor_color      = "#88AADD"
+  
+  xthickness = 1
+  ythickness = 1
+
+  fg[NORMAL]        = "#BEBEBE" 
+  fg[PRELIGHT]      = "#FFFFFF" 
+  fg[ACTIVE]        = "#BEBEBE" 
+  fg[SELECTED]      = "#202020" 
+  fg[INSENSITIVE]   = "#5C5C5C" 
+
+  bg[NORMAL]        = "#202020" 
+  bg[PRELIGHT]      = "#151515" 
+  bg[ACTIVE]        = "#202020" 
+  bg[SELECTED]      = "#151515" 
+  bg[INSENSITIVE]   = "#202020" 
+  
+  base[NORMAL]      = "#202020" 
+  base[PRELIGHT]    = "#151515" 
+  base[ACTIVE]      = "#202020" 
+  base[SELECTED]    = "#707070" 
+  base[INSENSITIVE] = "#4C4C4C" 
+  
+  text[NORMAL]      = "#BEBEBE" 
+  text[PRELIGHT]    = "#FFFFFF" 
+  text[ACTIVE]      = "#FFFFFF" 
+  text[SELECTED]    = "#FFFFFF" 
+  text[INSENSITIVE] = "#5C5C5C" 
+
+  engine "murrine" 
+  {
+    scrollbarstyle      = 0 
+    listviewstyle       = 0 
+    scrollbar_color     = "#252525"
+    contrast            = 1.0
+    glazestyle          = 0 
+    menubarstyle        = 0 
+    menubaritemstyle    = 1 
+    menuitemstyle       = 0 
+    listviewheaderstyle = 0 
+    roundness           = 0 
+    animation           = TRUE
+    menustyle           = 0
+    hilight_ratio       = 1.0
+  }
+}
+
+style "theme-wide" = "theme-default"
+{
+  xthickness = 2
+  ythickness = 2
+}
+
+style "theme-wider" = "theme-default"
+{
+  xthickness = 3
+  ythickness = 3
+}
+
+style "theme-entry" = "theme-wider"
+{
+  bg[SELECTED] = "#151515"
+}
+
+style "theme-button" = "theme-wider"
+{
+  bg[NORMAL] = "#202020"
+  bg[ACTIVE] = "#151515"
+}
+
+style "theme-notebook" = "theme-wide" {}
+
+style "theme-tasklist" = "theme-default"
+{
+  xthickness = 5
+  ythickness = 3
+}
+
+style "theme-menu" = "theme-default"
+{
+  xthickness = 2
+  ythickness = 1
+}
+
+style "theme-menu-item" = "theme-default"
+{
+  ythickness = 3
+  fg[PRELIGHT]   = "#9C9C9C"
+  text[PRELIGHT] = "#FFFFFF"
+}
+
+style "theme-menubar" = "theme-default"
+{
+  bg[NORMAL] = "#202020"
+}
+
+style "theme-menubar-item"
+{
+  ythickness = 4
+  bg[PRELIGHT] = "#151515"
+}
+
+style "theme-tree" = "theme-default"
+{
+  xthickness = 2
+  ythickness = 2
+}
+
+style "theme-frame-title" = "theme-default"
+{
+  fg[NORMAL] = "#BEBEBE" 
+}
+
+style "theme-tooltips" = "theme-default"
+{
+  xthickness = 4
+  ythickness = 4
+  bg[NORMAL] = "#202020"
+}
+
+style "theme-progressbar" = "theme-wide"
+{
+  xthickness = 1
+  ythickness = 1
+  fg[PRELIGHT] = "#FFFFFF"
+}
+
+style "theme-combo" = "theme-button" {}
+
+style "EditorStyle" {
+  base[NORMAL]      = "#111111"
+  text[NORMAL]      = "#BEBEBE"
+  text[PRELIGHT]    = "#BEBEBE"
+  text[ACTIVE]      = "#BEBEBE"
+  text[INSENSITIVE] = "#BEBEBE"
+}
+
+class "GtkWidget"      style "theme-default"
+class "GtkButton"      style "theme-button"
+class "GtkScale"       style "theme-button"
+class "GtkCombo"       style "theme-button"
+class "GtkRange"       style "theme-wide"
+class "GtkFrame"       style "theme-wide"
+class "GtkMenu"        style "theme-menu"
+class "GtkEntry"       style "theme-entry"
+class "GtkMenuItem"    style "theme-menu-item"
+class "GtkNotebook"    style "theme-notebook"
+class "GtkProgressBar" style "theme-progressbar"
+class "*MenuBar*"      style "theme-menubar"
+
+widget_class "*MenuItem.*" style "theme-menu-item"
+widget_class "*MenuBar.*"  style "theme-menubar-item"
+
+widget_class "*.GtkComboBox.GtkButton" style "theme-combo"
+widget_class "*.GtkCombo.GtkButton"    style "theme-combo"
+
+widget_class "*.tooltips.*.GtkToggleButton" style "theme-tasklist"
+widget "gtk-tooltips" style "theme-tooltips"
+
+widget_class "*.GtkTreeView.GtkButton"  style "theme-tree"
+widget_class "*.GtkCTree.GtkButton"     style "theme-tree"
+widget_class "*.GtkList.GtkButton"      style "theme-tree"
+widget_class "*.GtkCList.GtkButton"     style "theme-tree"
+widget_class "*.GtkFrame.GtkLabel"      style "theme-frame-title"
+
+widget_class "*.GtkNotebook.*.GtkEventBox" style "theme-notebook"
+widget_class "*.GtkNotebook.*.GtkViewport" style "theme-notebook"
+
+class "GtkTextView" style "EditorStyle"
