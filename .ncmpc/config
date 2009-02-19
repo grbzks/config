@@ -1,0 +1,64 @@
+## auto center (center the playing track in the playlist)
+auto-center = no
+
+## wide_cursor - make the cursor as wide as the screen
+wide-cursor = yes
+
+## wrapped cursor movement
+wrap-around = no
+
+## wrapped find mode
+find-wrap = yes
+
+## list-format
+list-format = "%name%|[%artist% - ]%title%|%file%"
+
+## status-format
+status-format = "[%artist% - ]%title%|%shortfile%"
+
+## sound audible bell on alerts
+audible-bell = no
+
+## enable visible bell on alerts
+visible-bell = yes
+
+## change the xterm title 
+set-xterm-title = no
+
+## xterm title format
+xterm-title-format = "ncmpc: [ %name%|[%artist% - ]%title%|%file%]"
+
+## enable mouse events 
+enable-mouse = no
+
+## mpd crossfade time 
+##crossfade-time = 10
+
+##
+## Color configuration
+##
+## colors: black,red,green,yellow,blue,magenta,cyan,white 
+##
+
+## enable/disable colors
+enable-colors = yes
+
+## background colors: black,red,green,yellow,blue,magenta,cyan,white, none 
+color background = none
+
+## text colors: black, red, green, yellow, blue, magenta, cyan, white,
+##              brightblack, brightred, brightgreen, brightyellow, brightblue,
+##              brightmagenta, brightcyan, brightwhite
+
+
+color title = cyan
+color title-bold = brightcyan
+color line = blue
+color line-flags = brightcyan
+color list = cyan
+color list-bold = blue
+color progressbar = blue
+color status-state = brightcyan
+color status-song  = cyan
+color status-time  = cyan
+color alert = red
