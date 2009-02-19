@@ -1,0 +1,8 @@
+gtk-icon-theme-name = "hicolor"
+gtk-theme-name = "dark"
+gtk-font-name = "Sans 9"
+style "user-font"
+{
+font_name = "Sans 9"
+}
+widget_class "*" style "user-font"
