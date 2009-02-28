@@ -1,0 +1,124 @@
+# keybindings
+bind f exec firefox
+bind h exec xset dpms force off
+bind l exec slock
+bind v exec apvlv
+bind Q quit
+bind R restart
+bind U undo
+bind Escape abort
+bind Tab next
+
+# banish the rat cursor
+banish
+
+# keybindings
+definekey top Print exec scrot
+definekey top XF86AudioMute exec amixer -q set PCM 0%
+definekey top XF86AudioLowerVolume exec amixer -q set PCM 3dB-
+definekey top XF86AudioRaiseVolume exec amixer -q set PCM 3dB+
+definekey top XF86AudioPlay exec mpc toggle > /dev/null
+definekey top XF86AudioStop exec mpc stop > /dev/null
+definekey top XF86AudioPrev exec mpc prev > /dev/null
+definekey top XF86AudioNext exec mpc next > /dev/null
+
+# default escape key
+escape F30
+# seconds the message window is shown
+msgwait 5
+# which  windows steal focus
+rudeness 13
+# dont show a startup message
+startup_message off
+
+# removed keybindings
+unbind 0
+unbind 1
+unbind 2
+unbind 3
+unbind 4
+unbind 5
+unbind 6
+unbind 7
+unbind 8
+unbind 9
+unbind i
+unbind m
+unbind n
+unbind p
+unbind r
+unbind s
+unbind u
+unbind w
+unbind x
+unbind A
+unbind F
+unbind S
+unbind U
+unbind V
+unbind Up
+unbind Down
+unbind Left
+unbind Right
+unbind colon
+unbind minus
+unbind Return
+unbind space
+unbind C-a
+unbind C-A
+unbind C-b
+unbind C-c
+unbind C-f
+unbind C-g
+unbind C-i
+unbind C-k
+unbind C-l
+unbind C-m
+unbind C-n
+unbind C-p
+unbind C-r
+unbind C-s
+unbind C-u
+unbind C-v
+unbind C-w
+unbind C-x
+unbind C-K
+unbind C-S
+unbind C-V
+unbind C-Up
+unbind C-Down
+unbind C-Left
+unbind C-Right
+unbind C-apostrophe
+unbind C-exclam
+unbind C-Return
+unbind C-space
+unbind C-underscore
+unbind C-F30
+unbind M-Tab
+
+# focusing doesnt move the rat cursor
+warp off
+
+# variables
+set	resizeunit	5
+set	maxundos	20
+set	wingravity	center
+set	maxsizegravity	center
+set	transgravity	center
+set	bargravity	northeast
+set	font		-*-terminus-*-*-*-*-14-*-*-*-*-*-*-*
+set	padding		0 0 0 0
+set	border		0
+set	barborder	1
+set	inputwidth	200
+set	barinpadding	0
+set	topkmap		top
+set	waitcursor	1
+set	winfmt		%n%s%t
+set	winname		title
+set	fgcolor		white
+set	bgcolor		black
+set	barpadding	4 0
+set	winliststyle	column
+set	framesels
