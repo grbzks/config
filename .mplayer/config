@@ -8,3 +8,9 @@ subfont-encoding=ISO-8859-7
 # Set subtitle file encoding.
 unicode=yes
 utf8=yes
+
+#other
+fs=yes
+zoom=yes
+quiet=yes
+really-quiet=1
