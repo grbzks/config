@@ -56,7 +56,7 @@ style "theme-default"
     roundness           = 0 
     animation           = TRUE
     menustyle           = 0
-    hilight_ratio       = 1.0
+    highlight_shade	= 1.0
   }
 }
 
