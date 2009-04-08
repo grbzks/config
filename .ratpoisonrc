@@ -13,6 +13,7 @@ bind Tab next
 banish
 
 # keybindings
+#definekey top Print exec import -window root ~/`date +%Y-%m-%d--%H:%M:%S`.png
 definekey top Print exec scrot
 definekey top XF86AudioMute exec amixer -q set PCM 0%
 definekey top XF86AudioLowerVolume exec amixer -q set PCM 3dB-
