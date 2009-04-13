@@ -1,5 +1,5 @@
 #!/bin/bash
 
-bat=`acpi | tr -s , \  | cut -d\  -f5`
+bat=`acpi | tr -s , \  | cut -d\  -f4`
 
 echo "battery: $bat"
