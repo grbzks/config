@@ -120,6 +120,8 @@ set	winfmt		%n%s%t
 set	winname		title
 set	fgcolor		white
 set	bgcolor		black
+set	fwcolor		black
+set	bwcolor		black
 set	barpadding	4 0
 set	winliststyle	column
 set	framesels
